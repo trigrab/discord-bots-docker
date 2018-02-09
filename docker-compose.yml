@@ -1,0 +1,16 @@
+raidon:
+  build: ./build
+  volumes:
+  - ./volumes/raidon/config.conf:/app/config.conf
+  environment:
+  - REPO=https://github.com/Breee/raidon
+  - MAIN_PY=raidon.py
+
+raidquaza:
+  build: ./build
+  volumes:
+  - ./volumes/raidquaza/config.conf:/app/config.conf
+  environment:
+  - REPO=https://github.com/Breee/pokemon-raid-bot.git
+  - MAIN_PY=poll.py
+
